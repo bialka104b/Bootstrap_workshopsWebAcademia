@@ -1,0 +1,17 @@
+.contact__row {
+  padding: 0 15px;
+  margin: 0 auto;
+  form {
+    margin: 0 auto;
+    btn-primary {
+      color: white;
+    }
+  }
+  .contact__form-button {
+    color: white;
+    &:hover {
+      background-color: white;
+      color: #eea230;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.box {
+  background: green;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar__style {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: lighten($color: #eea230, $amount: 40%);
+  //background-color:lighten($color, 25%);
+
+  .btn-outline-success {
+    color: #eea230;
+    border-color: #eea230;
+    &:hover {
+      color: white;
+      background: #eea230;
+    }
+  }
+}
+
+.logo {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  .logo__img {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
+.container-fluid {
+  padding: 0;
+}
+.carousel-item.active {
+  img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.section__images {
+  margin-top: 50px;
+  .section__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #eea230;
+    position: relative;
+    p {
+      text-transform: capitalize;
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      text-align: center;
+      font-style: oblique;
+      width: 100%;
+    }
+    &:hover > {
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .section__image {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: lighten($color: #eea230, $amount: 35%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: #eea230;
+  }
+  .col-adress {
+    i {
+      display: inline-block;
+      position: relative;
+      top: -70px;
+    }
+    .adress-text {
+      display: inline-block;
+    }
+  }
+  .footer__row-icon {
+    .footer__col-icon {
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        i {
+          font-size: 30px;
+          &::before {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .footer__contact {
+    p {
+      margin-left: 50px;
+    }
+  }
+  .footer__privacy-policy {
+    text-align: center;
+    // a {
+
+    // }
+  }
+}
